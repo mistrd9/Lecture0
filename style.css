@@ -1,5 +1,21 @@
-h1{
-    font-family: Helvetica;
-    background-color: teal ;
-    color: white;
+@media (min-width: 500px)
+{
+    h1::before
+     {
+        content: "Life of polar bear";
+        font-family: Helvetica;
+        background-color: teal ;
+        color: white;
+    }
+}
+    @media (max-width: 499px)
+    {
+        h1::before
+        {
+           content: "Polar bear";
+           font-family: Helvetica;
+           background-color: teal ;
+           color: white;
+         }
+    
     }
